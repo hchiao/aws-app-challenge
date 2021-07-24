@@ -10,14 +10,36 @@ Resources:
       CodeUri: function/.
       Description: Call the AWS Lambda API
       Timeout: 10
-      # Function's execution role
       Policies:
         - AWSLambdaBasicExecutionRole
         - AWSLambda_ReadOnlyAccess
         - AWSXrayWriteOnlyAccess
+        - AmazonDynamoDBFullAccess
       Tracing: Active
       Layers:
         - !Ref libs
+      Events:
+        Create:
+          Type: Api
+          Properties:
+            Auth:
+              Authorizer: null
+            Path: '/dbcreate'
+            Method: post
+        Put:
+          Type: Api
+          Properties:
+            Auth:
+              Authorizer: null
+            Path: '/dbput'
+            Method: put
+        Delete:
+          Type: Api
+          Properties:
+            Auth:
+              Authorizer: null
+            Path: '/dbdelete'
+            Method: delete
   libs:
     Type: AWS::Serverless::LayerVersion
     Properties:

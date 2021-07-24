@@ -7,8 +7,5 @@ build-deploy: ## build and deploy infra
 clean-up: ## clean up
 	bash scripts/clean-up.sh
 
-unit-test: ## local unit test
-	bash scripts/run-utest.sh
-
 lambda-test: ## remote lambda invoke test
 	bash scripts/run-lambda-test.sh
