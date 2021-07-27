@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eo pipefail
-rm -f out.yml out.json function/*.pyc
+rm -f output.yml output.json function/*.pyc
 rm -rf package function/__pycache__
 ARTIFACT_BUCKET=$(cat bucket-name.txt)
 aws s3 rb --force s3://$ARTIFACT_BUCKET

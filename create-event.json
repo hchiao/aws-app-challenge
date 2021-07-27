@@ -1,0 +1,109 @@
+{
+    "body": "{\t\"AttributeDefinitions\": [{\t\t\t\"AttributeName\": \"Artist\",\t\t\t\"AttributeType\": \"S\"\t\t},\t\t{\t\t\t\"AttributeName\": \"SongTitle\",\t\t\t\"AttributeType\": \"S\"\t\t}\t],\t\"KeySchema\": [{\t\t\t\"AttributeName\": \"Artist\",\t\t\t\"KeyType\": \"HASH\"\t\t},\t\t{\t\t\t\"AttributeName\": \"SongTitle\",\t\t\t\"KeyType\": \"RANGE\"\t\t}\t],\t\"ProvisionedThroughput\": {\t\t\"ReadCapacityUnits\": 5,\t\t\"WriteCapacityUnits\": 5\t},\t\"TableName\": \"Music\"}",
+    "headers": {
+        "Accept": "*/*",
+        "CloudFront-Forwarded-Proto": "https",
+        "CloudFront-Is-Desktop-Viewer": "true",
+        "CloudFront-Is-Mobile-Viewer": "false",
+        "CloudFront-Is-SmartTV-Viewer": "false",
+        "CloudFront-Is-Tablet-Viewer": "false",
+        "CloudFront-Viewer-Country": "AU",
+        "Host": "iobm8ibsu0.execute-api.ap-southeast-2.amazonaws.com",
+        "User-Agent": "curl/7.64.1",
+        "Via": "2.0 1b8d25a254f659ff0989f0e7bb579086.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "c06fRcfjFJNhgpHCosKrsTOMprfxLYCLk92ZbDXJDLDbQB-EWgdKow==",
+        "X-Amzn-Trace-Id": "Root=1-60ffcc63-212729ad41d1512162372210",
+        "X-Forwarded-For": "1.152.105.247, 130.176.156.188",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https",
+        "content-type": "application/x-www-form-urlencoded"
+    },
+    "httpMethod": "POST",
+    "isBase64Encoded": false,
+    "multiValueHeaders": {
+        "Accept": [
+            "*/*"
+        ],
+        "CloudFront-Forwarded-Proto": [
+            "https"
+        ],
+        "CloudFront-Is-Desktop-Viewer": [
+            "true"
+        ],
+        "CloudFront-Is-Mobile-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-SmartTV-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-Tablet-Viewer": [
+            "false"
+        ],
+        "CloudFront-Viewer-Country": [
+            "AU"
+        ],
+        "Host": [
+            "iobm8ibsu0.execute-api.ap-southeast-2.amazonaws.com"
+        ],
+        "User-Agent": [
+            "curl/7.64.1"
+        ],
+        "Via": [
+            "2.0 1b8d25a254f659ff0989f0e7bb579086.cloudfront.net (CloudFront)"
+        ],
+        "X-Amz-Cf-Id": [
+            "c06fRcfjFJNhgpHCosKrsTOMprfxLYCLk92ZbDXJDLDbQB-EWgdKow=="
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-60ffcc63-212729ad41d1512162372210"
+        ],
+        "X-Forwarded-For": [
+            "1.152.105.247, 130.176.156.188"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ],
+        "content-type": [
+            "application/x-www-form-urlencoded"
+        ]
+    },
+    "multiValueQueryStringParameters": null,
+    "path": "/dbcreate",
+    "pathParameters": null,
+    "queryStringParameters": null,
+    "requestContext": {
+        "accountId": "336347071879",
+        "apiId": "iobm8ibsu0",
+        "domainName": "iobm8ibsu0.execute-api.ap-southeast-2.amazonaws.com",
+        "domainPrefix": "iobm8ibsu0",
+        "extendedRequestId": "DHzfoFd9SwMFQkw=",
+        "httpMethod": "POST",
+        "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "1.152.105.247",
+            "user": null,
+            "userAgent": "curl/7.64.1",
+            "userArn": null
+        },
+        "path": "/Prod/dbcreate",
+        "protocol": "HTTP/1.1",
+        "requestId": "b4a9dcf5-e0cf-446b-bff2-65da402b3adb",
+        "requestTime": "27/Jul/2021:09:05:39 +0000",
+        "requestTimeEpoch": 1627376739827,
+        "resourceId": "tgblg8",
+        "resourcePath": "/dbcreate",
+        "stage": "Prod"
+    },
+    "resource": "/dbcreate",
+    "stageVariables": null
+}

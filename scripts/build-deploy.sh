@@ -15,5 +15,5 @@ cd ..
 
 # Deploy using cloudformation
 ARTIFACT_BUCKET=$(cat bucket-name.txt)
-aws cloudformation package --template-file template.yml --s3-bucket $ARTIFACT_BUCKET --output-template-file out.yml
-aws cloudformation deploy --template-file out.yml --stack-name aws-s3-lifecycle --capabilities CAPABILITY_NAMED_IAM
+aws cloudformation package --template-file template.yml --s3-bucket $ARTIFACT_BUCKET --output-template-file output.yml
+aws cloudformation deploy --template-file output.yml --stack-name aws-s3-lifecycle --capabilities CAPABILITY_NAMED_IAM

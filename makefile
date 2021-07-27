@@ -6,3 +6,6 @@ build-deploy: ## build and deploy infra
 
 clean-up: ## clean up
 	bash scripts/clean-up.sh
+
+lambda-invoke: ## integration smoke test
+	bash scripts/lambda-invoke.sh
